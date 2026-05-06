@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark p {
+  color: white;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* .dark span {
+  @apply text-cyan-500;
+}
+
+span {
+  @apply text-blue-950;
+} */
+
+p {
+  @apply text-blue-950;
+}
+
+* {
+  @apply transition-colors duration-500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
