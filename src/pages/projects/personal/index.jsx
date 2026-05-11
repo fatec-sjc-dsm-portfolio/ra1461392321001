@@ -71,7 +71,7 @@ const PersonalProjectPage = () => {
         "No Easy Project, meu desafio foi entender o Spring JPA e trabalhar efetivamente com o MySQL como banco de dados. Isso envolveu o gerenciamento de diferentes permissões com base em entidades e garantir que essas permissões fossem aplicadas à entidade do projeto e não a um contexto global.",
     },
     {
-      title: "DoceriaDaNanna - Gerenciaddor de Pedidos",
+      title: "DoceriaDaNanna - Gerenciador de Pedidos",
       description:
         "DoceriaDaNanna - Gerenciaddor de Pedidos é uma aplicação projetada para simplificar o gerenciamento de pedidos em uma padaria ou café. Construído com Node.js, React, React Native e PostgreSQL, permite que os usuários criem mesas, adicionem pedidos associados a cada mesa e enviem pedidos para a cozinha para preparo. Uma vez que a cozinha completa um pedido, o garçom pode então entregá-lo à mesa respectiva. A aplicação possui um painel da cozinha para o gerenciamento de pedidos e um aplicativo móvel para garçons criarem e gerenciarem pedidos. Com sua estrutura de backend eficiente e interfaces amigáveis, o DoceriaDaNanna - Rastreador de Pedidos simplifica o processo de gerenciamento de pedidos, aprimorando a experiência geral do cliente.",
       stacks: ["Node.js", "React", "React Native", "PostgreSQL"],

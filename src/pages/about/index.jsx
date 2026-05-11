@@ -82,14 +82,13 @@ const AboutMe = () => {
             <h2 className="text-4xl font-bold text-blue-950 dark:text-cyan-500 mb-2">
               Experiência profissional
             </h2>
-            <p className="text-xl font-semibold">
-              Desenvolvedor backend C# - Prime Technology
-            </p>
+            <p className="text-xl font-semibold">Desenvolvedor de Software - Autaza</p>
+            <p className="text-xl font-semibold">Desenvolvedor backend C# - Prime Technology</p>
           </div>
 
           <div>
             <h2 className="text-4xl font-bold text-blue-950 dark:text-cyan-500 mb-2">
-              Academico
+              Acadêmico
             </h2>
             <p className="text-xl font-semibold">
              Estou cursando Desenvolvimento de Software Multiplataforma na Fatec Jessen Vidal in São José dos Campos
@@ -118,8 +117,7 @@ const AboutMe = () => {
               AFK
             </h2>
             <p className="text-xl font-semibold">
-              Fora do teclado, gosto de ir à academia, cozinhar comidas
-              deliciosas.
+              Fora do teclado, gosto de ir à academia, escalar e cozinhar comidas deliciosas.
             </p>
           </div>
         </div>
@@ -178,9 +176,8 @@ const AboutMe = () => {
             <h2 className="text-4xl font-bold text-blue-950 dark:text-cyan-500 mb-2">
               Work
             </h2>
-            <p className="text-xl font-semibold">
-              Backend developer C#  - Prime Technology  
-            </p>
+            <p className="text-xl font-semibold">Software Developer - Autaza</p>
+            <p className="text-xl font-semibold">Backend Developer C# - Prime Technology</p>
           </div>
 
           <div>
@@ -214,8 +211,7 @@ const AboutMe = () => {
               AFK
             </h2>
             <p className="text-xl font-semibold">
-              Away From Keyboard, I enjoy going to the gym, cooking delicious
-              foods.
+              Away From Keyboard, I enjoy going to the gym, climbing and cooking delicious foods.
             </p>
           </div>
         </div>

@@ -94,7 +94,7 @@ Trabalho em equipe auxiliando colegas na leitura e interpretação da modelagem 
         transition={transition}
       >
         <Head>
-          <title>Projects | Yokota</title>
+          <title>Projetos | Yokota</title>
         </Head>
         <h1 className="text-7xl md:text-8xl font-bold text-yellow-500 dark:text-rose-500 mb-12 mt-16">
           Projetos acadêmicos
