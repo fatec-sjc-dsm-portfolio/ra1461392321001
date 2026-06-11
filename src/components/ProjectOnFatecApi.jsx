@@ -3,6 +3,8 @@ import Link from "next/link";
 
 const ProjectOnFatecApi = ({
   title,
+  semester,
+  year,
   description,
   stacks,
   repository,
@@ -12,6 +14,11 @@ const ProjectOnFatecApi = ({
   return (
     <div className="bg-white dark:bg-neutral-700 rounded-lg p-6 shadow-md flex flex-col gap-4 justify-between h-full">
       <div>
+        {semester && (
+          <span className="text-sm font-semibold text-yellow-500 dark:text-rose-400 uppercase tracking-wide mb-2 block">
+            {semester}º Semestre {year && `· ${year}`}
+          </span>
+        )}
         <h2 className="text-blue-950 dark:text-cyan-500 font-bold text-3xl mb-4">
           {title}
         </h2>

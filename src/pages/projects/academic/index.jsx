@@ -14,6 +14,22 @@ const AcademicProjectsPage = () => {
 
   const projetos = [
     {
+      title: "Plataforma de Análise ESG para Propriedades Rurais",
+      description: `Plataforma web para análise de aspectos Ambientais, Sociais e de Governança (ESG) de propriedades rurais no estado de São Paulo, integrando dados públicos de fontes oficiais como INPE, FUNAI e ICMBio.
+O sistema realiza análises geoespaciais para identificar passivos ambientais como desmatamento e queimadas, além de permitir consultas em linguagem natural com resultados rastreáveis.
+A solução oferece pontuação de risco socioambiental (escala 0-100), visualização interativa de mapas com camadas customizáveis e exportação de relatórios em PDF.`,
+      challenges: `1ª Sprint: Modelagem do banco de dados e estrutura inicial do projeto; integração com APIs públicas (INPE, FUNAI, ICMBio) e visualização geoespacial básica com Leaflet.
+2ª Sprint: Implementação da interface de chat com linguagem natural para consultas; sistema de detecção automatizada de desmatamento e queimadas; análise de interseção com áreas protegidas.
+3ª Sprint: Desenvolvimento do sistema de pontuação de risco socioambiental; exportação de relatórios PDF; refinamento das camadas do mapa e melhorias de performance.`,
+      stacks: ["Python", "React", "TypeScript", "Leaflet", "PostgreSQL", "Docker", "AWS"],
+      softSkills: `Raciocínio analítico ao estruturar o histórico de consultas com foco em alta performance e rastreabilidade.
+Proatividade ao implementar o pipeline de busca com etapas bem definidas.
+Colaboração auxiliando colegas em suas atividades e mantendo consistência nas entregas do time.`,
+      repository: "https://github.com/Sync-FATEC/API-2026-6SEM",
+      semester: 6,
+      year: "2026",
+    },
+    {
       title: "Base Administrativa da Guarnição de Caçapava – Sistema de Controle de Estoque e Agendamentos",
       description: `A Base Administrativa da Guarnição de Caçapava enfrentava dificuldades no controle de materiais do almoxarifado e da farmácia militar devido a processos manuais, retrabalho e risco elevado de erros.
 Um sistema centralizado foi desenvolvido para gerenciamento de estoque, autenticação via login, leitura de QR Code, alertas automáticos de validade e quantidade, além de relatórios estratégicos para decisões logísticas.
@@ -26,6 +42,8 @@ A solução trouxe automação, rastreabilidade e mais segurança no fluxo de ma
 Proatividade ao antecipar necessidades do cliente e propor melhorias como logs detalhados.
 Colaboração auxiliando colegas a padronizar telas, componentes e estruturas de backend.`,
       repository: "https://github.com/Sync-FATEC/API-2025.2-5SEM",
+      semester: 5,
+      year: "2025/2",
     },
     {
       title: "TECSUS – Sistema Gerenciador de Estações Meteorológicas",
@@ -39,6 +57,8 @@ A solução permitiu alertas automatizados, visualização em dashboards e centr
 Comunicação multidisciplinar alinhando equipe técnica e especialistas em sensores.
 Trabalho em equipe auxiliando colegas na leitura e interpretação da modelagem do banco.`,
       repository: "https://github.com/Sync-FATEC/API-2025.1-4SEM",
+      semester: 4,
+      year: "2025/1",
     },
     {
       title: "FAPG - Portal de transparência",
@@ -50,6 +70,8 @@ Trabalho em equipe auxiliando colegas na leitura e interpretação da modelagem 
 4ª Sprint: Em andamento.`,
       softSkills: `Ajuda a novos membros com explicação de arquitetura; comunicação e colaboração com o time; suporte técnico durante refatorações.`,
       repository: "https://github.com/Sync-FATEC/API-2024.2-3SEM",
+      semester: 3,
+      year: "2024/2",
     },
     {
       title: "Woodpecker - HelpDesk",
@@ -61,6 +83,8 @@ Trabalho em equipe auxiliando colegas na leitura e interpretação da modelagem 
 4ª Sprint: Gráficos com ReCharts e métricas para o dashboard.`,
       softSkills: `Atuação como Scrum Master conciliando comunicação do time; auxílio técnico em React e Node; resolução de conflitos internos no grupo.`,
       repository: "https://github.com/yokotaerik/API-2024.01",
+      semester: 2,
+      year: "2024/1",
     },
     {
       title: "Criança Renal",
@@ -72,6 +96,8 @@ Trabalho em equipe auxiliando colegas na leitura e interpretação da modelagem 
 4ª Sprint: Correções e melhorias.`,
       softSkills: `Proatividade ao resolver tarefas tecnicamente difíceis; resiliência ao lidar com envio de imagens no blog; auxílio a colegas iniciantes em programação.`,
       repository: "https://github.com/Daiene/Pixels",
+      semester: 1,
+      year: "2023/2",
     },
   ];
 
@@ -104,11 +130,13 @@ Trabalho em equipe auxiliando colegas na leitura e interpretação da modelagem 
             <ProjectOnFatecApi
               key={index}
               title={project.title}
+              semester={project.semester}
+              year={project.year}
               description={project.description}
               stacks={project.stacks}
               repository={project.repository}
               softSkills={project.softSkills}
-              icon={project.icon}
+              challenges={project.challenges}
             />
           ))}
         </div>
@@ -134,11 +162,13 @@ Trabalho em equipe auxiliando colegas na leitura e interpretação da modelagem 
             <ProjectOnFatecApi
               key={index}
               title={project.title}
+              semester={project.semester}
+              year={project.year}
               description={project.description}
               stacks={project.stacks}
               repository={project.repository}
               softSkills={project.softSkills}
-              icon={project.icon}
+              challenges={project.challenges}
             />
           ))}
         </div>
