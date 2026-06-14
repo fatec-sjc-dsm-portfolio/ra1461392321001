@@ -16,15 +16,14 @@ const AcademicProjectsPage = () => {
     {
       title: "Plataforma de Análise ESG para Propriedades Rurais",
       description: `Plataforma web para análise de aspectos Ambientais, Sociais e de Governança (ESG) de propriedades rurais no estado de São Paulo, integrando dados públicos de fontes oficiais como INPE, FUNAI e ICMBio.
-O sistema realiza análises geoespaciais para identificar passivos ambientais como desmatamento e queimadas, além de permitir consultas em linguagem natural com resultados rastreáveis.
-A solução oferece pontuação de risco socioambiental (escala 0-100), visualização interativa de mapas com camadas customizáveis e exportação de relatórios em PDF.`,
-      challenges: `1ª Sprint: Modelagem do banco de dados e estrutura inicial do projeto; integração com APIs públicas (INPE, FUNAI, ICMBio) e visualização geoespacial básica com Leaflet.
-2ª Sprint: Implementação da interface de chat com linguagem natural para consultas; sistema de detecção automatizada de desmatamento e queimadas; análise de interseção com áreas protegidas.
-3ª Sprint: Desenvolvimento do sistema de pontuação de risco socioambiental; exportação de relatórios PDF; refinamento das camadas do mapa e melhorias de performance.`,
-      stacks: ["Python", "React", "TypeScript", "Leaflet", "PostgreSQL", "Docker", "AWS"],
-      softSkills: `Raciocínio analítico ao estruturar o histórico de consultas com foco em alta performance e rastreabilidade.
-Proatividade ao implementar o pipeline de busca com etapas bem definidas.
-Colaboração auxiliando colegas em suas atividades e mantendo consistência nas entregas do time.`,
+O sistema recebe consultas em linguagem natural, identifica a intenção do usuário e apresenta dados ambientais rastreáveis em um mapa interativo. A solução também permite executar, agendar e acompanhar o pipeline de atualização das bases públicas, além de armazenar o histórico de conversas dos usuários.`,
+      challenges: `1ª Sprint — Backend: desenvolvi o pipeline de PLN, incluindo pré-processamento com NLTK e SpaCy, extração de características com Bag of Words, TF-IDF e embeddings, classificação de intenções e busca semântica. Também implementei a ingestão, textualização e vetorização dos dados. Frontend: criei a seleção de intervalo e unidade no agendamento e configurei limites, zoom e exibição dos resultados geoespaciais no mapa Leaflet, restringindo a navegação ao estado de São Paulo.
+2ª Sprint — Backend: implementei retentativas automáticas para falhas do ETL e o rastreamento detalhado de cada execução, com status, eventos e logs das etapas de coleta, transformação e carga. Frontend: integrei a execução e o histórico do pipeline à API, exibindo o progresso e o resultado individual de cada fonte de dados.
+3ª Sprint — Backend: desenvolvi a persistência do histórico de conversas, o salvamento automático das consultas e mensagens, endpoints autenticados para usuários e uma listagem administrativa de todos os históricos. Frontend: substituí os dados simulados pela integração com a API, enviei o token nas consultas autenticadas e organizei as conversas em Hoje, Ontem, Últimos 7 dias e Anteriores.`,
+      stacks: ["Python", "FastAPI", "NLTK", "SpaCy", "scikit-learn", "PostgreSQL", "pgvector", "Next.js", "React", "TypeScript", "Leaflet"],
+      softSkills: `Raciocínio analítico para decompor o processamento de linguagem natural e o ETL em etapas rastreáveis.
+Proatividade na investigação de falhas de integrações externas e na criação de mecanismos de retentativa e monitoramento.
+Colaboração entre frontend e backend para alinhar contratos da API, autenticação e experiência de uso.`,
       repository: "https://github.com/Sync-FATEC/API-2026-6SEM",
       semester: 6,
       year: "2026",
