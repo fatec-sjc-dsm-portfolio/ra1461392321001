@@ -22,16 +22,17 @@ const ProjectOnFatecApi = ({
         <h2 className="text-blue-950 dark:text-cyan-500 font-bold text-3xl mb-4">
           {title}
         </h2>
-        <p className="text-lg text-gray-800">{description.split("\n").map((line, index) => (
-        <React.Fragment key={index}>
-          <br />
-          {line}
-        </React.Fragment>
-      ))}</p>
+        <p className="text-lg text-gray-800 whitespace-pre-line">
+          {description}
+        </p>
         <br />
-        <p className="text-lg text-gray-800">{challenges}</p>
+        <p className="text-lg text-gray-800 whitespace-pre-line">
+          {challenges}
+        </p>
         <br />
-        <p className="text-lg text-gray-800">Soft skills: {softSkills}</p>
+        <p className="text-lg text-gray-800 whitespace-pre-line">
+          Soft skills: {softSkills}
+        </p>
       </div>
       <div className="flex flex-wrap gap-2">
         {stacks.map((technology, index) => (

@@ -17,9 +17,11 @@ const AcademicProjectsPage = () => {
       title: "Plataforma de Análise ESG para Propriedades Rurais",
       description: `Plataforma web para análise de aspectos Ambientais, Sociais e de Governança (ESG) de propriedades rurais no estado de São Paulo, integrando dados públicos de fontes oficiais como INPE, FUNAI e ICMBio.
 O sistema recebe consultas em linguagem natural, identifica a intenção do usuário e apresenta dados ambientais rastreáveis em um mapa interativo. A solução também permite executar, agendar e acompanhar o pipeline de atualização das bases públicas, além de armazenar o histórico de conversas dos usuários.`,
-      challenges: `1ª Sprint — Backend: desenvolvi o pipeline de PLN, incluindo pré-processamento com NLTK e SpaCy, extração de características com Bag of Words, TF-IDF e embeddings, classificação de intenções e busca semântica. Também implementei a ingestão, textualização e vetorização dos dados. Frontend: criei a seleção de intervalo e unidade no agendamento e configurei limites, zoom e exibição dos resultados geoespaciais no mapa Leaflet, restringindo a navegação ao estado de São Paulo.
-2ª Sprint — Backend: implementei retentativas automáticas para falhas do ETL e o rastreamento detalhado de cada execução, com status, eventos e logs das etapas de coleta, transformação e carga. Frontend: integrei a execução e o histórico do pipeline à API, exibindo o progresso e o resultado individual de cada fonte de dados.
-3ª Sprint — Backend: desenvolvi a persistência do histórico de conversas, o salvamento automático das consultas e mensagens, endpoints autenticados para usuários e uma listagem administrativa de todos os históricos. Frontend: substituí os dados simulados pela integração com a API, enviei o token nas consultas autenticadas e organizei as conversas em Hoje, Ontem, Últimos 7 dias e Anteriores.`,
+      challenges: `1ª Sprint: desenvolvi o pipeline de PLN, desde o pré-processamento e a classificação de intenções até a busca semântica. Também contribuí no mapa e no agendamento das atualizações.
+
+2ª Sprint: implementei retentativas e o rastreamento das execuções do ETL. No frontend, integrei o acompanhamento do pipeline e os resultados de cada fonte de dados.
+
+3ª Sprint: desenvolvi a persistência e a consulta do histórico de conversas, com autenticação e visão administrativa. Também integrei esses recursos ao frontend.`,
       stacks: ["Python", "FastAPI", "NLTK", "SpaCy", "scikit-learn", "PostgreSQL", "pgvector", "Next.js", "React", "TypeScript", "Leaflet"],
       softSkills: `Raciocínio analítico para decompor o processamento de linguagem natural e o ETL em etapas rastreáveis.
 Proatividade na investigação de falhas de integrações externas e na criação de mecanismos de retentativa e monitoramento.
